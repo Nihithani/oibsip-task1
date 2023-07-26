@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,200;1,300&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/2627c5fcb6.js" crossorigin="anonymous"></script>
+</head>
+    <title>portfolio page</title>
+</head>
+<body>
+    <!--navbar--->
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+    
+        </ul>
+        <a href="#" class="h-btn">Let's Talk</a>
+    </header>
+<!--homee-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h4>Hello, My name is </h4>
+            <h1>Gangam <span>Nihithani</span></h1>
+            <h3>I'm a Developer</h3>
+            <div class="newsletter">
+                <form>
+                    <input type="email" name="email" id="mail" placeholder="Enter Your Email">
+                    <input type="submit" name="submit" value="Let's Start">
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <!--about-->
+    <section class="about">
+        <div class="about-img" >
+            <img src="imgs/about-img.jpg">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <h5>Developer <span>& Designer</span></h5>
+            <p> I am a front end web developer.I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations. A responsive design makes your website accessible to all users, regardless of their device.</p>
+            
+            <div class="tab-titles">
+            
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                <li><span>Web Development</span><br>Web App development</li>
+                <li><span>App Development</span><br>Building Android/iOS apps</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+            <ul>
+                <li><span>2023- Current</span><br>Internship at OasisInfobyte</li>
+                <li><br>code contest conducted by college</li>
+                <li><span>Certification</span><br>From infosys SpringBoard</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="education">
+            <ul>
+                <li><span>2023</span><br>B.Tech in Electronics and Communication Engineering</li>
+                <li><span>2021</span><br>Intermediate at Narayana Junior college</li>
+                <li><span>2019</span><br>Schooling at New Era High School</li>
+            </ul>
+        </div>
+        
+        <button type="button">Let's Talk</button>
+        </div>
+        </div>
+    </section>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <!--services-->
+
+    <div class="Service" id="services">
+        <div class="title">
+            <h2>My Services</h2>
+        </div>
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-code"></i>
+                <h5>Web Design</h5>
+                <div class="pra"> 
+                    <p>Web design is not just about creating pretty layouts. It's about understanding the marketing challenge behind your business</p>
+                    <p style="text-align: center";></p>
+                    <a class="button" href="#"> Read More</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-crop-simple"></i>
+                <h5>UI/UX Design</h5>
+                <div class="pra"> 
+                    <p>Web design is not just about creating pretty layouts. It's about understanding the marketing challenge behind your business</p>
+                    <p style="text-align: center";></p>
+                    <a class="button" href="#"> Read More</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-brands fa-app-store"></i>
+                <h5>App Design</h5>
+                <div class="pra"> 
+                    <p>Web design is not just about creating pretty layouts. It's about understanding the marketing challenge behind your business</p>
+                    <p style="text-align: center";></p>
+                    <a class="button" href="#"> Read More</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+<!--contact me-->
+    <div class="contact-me">
+        <p>
+            Let Me Get You A Beautiful Website.
+        </p>
+<a class="button-two" href="#">Hire Me</a>
+    </div>
+
+    <footer>
+        <p>Gangam Nihithani</p>
+        <p>For more website design options - please contact me: </p>
+        <div class="social">
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+        <p class="end"> CopyRight By Gangam Nihithani</p>
+    </footer>
+
+
+    
+</body>
+</html>
