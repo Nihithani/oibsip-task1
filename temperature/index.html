@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="temp.css">
+    <title>Temperature converter</title>
+    <script src="https://kit.fontawesome.com/2627c5fcb6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="icon">
+            <i id="icon1" class="fa-solid fa-temperature-low fa-10x"></i>
+        </div>
+        <form id="calcTemp" onsubmit="calculateTemp(); return false">
+            <label for="temp"><h1>TEMPERATURE CONVERTER</h1></label>
+            <br>
+            <label for="temp"> <h6>Enter the Temperature to Convert</h6></label>
+            <br>
+            <input type="number" name="temp" id="temp" value="0">
+            <select name="temp_diff" id="temp_diff">
+                <option value="cel">&#176;Celsius</option>
+                <option value="fah">&#176;Fahrenheit</option>
+            </select>
+            <br>
+            <input type="submit" name="temp" id="submit">
+            <br>
+            <span id="result"></span>
+        </form>
+        <div class="icon">
+            <i class="fa-solid fa-arrow-right-arrow-left fa-10x"></i>
+        </div>
+    </div>
+
+    <script src="temp.js"></script>
+</body>
+
+</html>
