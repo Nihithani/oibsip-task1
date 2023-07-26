@@ -1,0 +1,290 @@
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    background-image: url(imgs/Purple\ Pink\ Polaroid\ Frame\ Phone\ Wallpaper.png);
+    margin: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#title{
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 50px;
+    font-size: 50px;
+
+
+}
+
+#plant1 img{
+    border-radius: 50px;
+    position: relative;
+    max-width: 100%;
+    flex-basis: 70%;
+        order: 2;
+}
+.sideside{
+ border-top-left-radius: 7px;
+ border-top-right-radius: 7px;
+  padding:15px;
+  display: flex;
+  background-color:#A0D995;
+  justify-content:space-around;
+  gap: 50px;
+  flex-wrap: nowrap;
+  position: relative;
+
+
+}
+.join{
+    text-align: left;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    width:100%;
+    height: 100%;
+    top:0px;
+    left:0px;
+    color: white;
+    position:absolute;
+    background: rgba(0, 0, 0, 0.897);
+    display: flex;
+    justify-content: right;
+    align-items:start;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+}
+.text-sec2{
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+.join pre{
+    padding-left: 20px;
+    align-items: start;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+
+.join:hover{
+    opacity: 1;
+}
+#leftbox{
+    border-radius: 10px;
+    margin: 20px;
+    background-color: #F6E3C5;
+    padding: 25px;
+    
+    height:565px;
+    width: 93%;
+   
+}
+#title2{
+    font-family: 'Times New Roman', Times, serif;
+    bottom: 500px;
+    padding-top: 30px;
+}
+
+#sec22{
+    background-color:#4CACBC;
+border-bottom-left-radius: 7px;
+border-bottom-right-radius: 7px;
+    height: 120px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.wrapper{
+    width: 100%;
+    height:50vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+
+}
+.imaage{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+img{
+    width: 100%;
+    height: 95%;
+    padding-left: 5px;
+    display: block;
+    margin: auto; 
+}
+
+.content{
+    padding: 10px;
+    color: white;
+    width: 83%;
+    height: 85%;
+    top: 0px;;
+    left:6.2px;
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+}
+.content:hover{
+    opacity: 1;
+
+}
+#rightbox{
+
+    border-radius: 10px;
+    margin: 20px;
+    padding:10px;
+    background-color: #B6FFCE;
+    padding: 25px;
+
+    height:570px;
+    width: 93%; 
+
+
+}
+#plant1{
+    position: inherit;    
+
+}
+#flex-container{
+    margin: 0 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    height: fit-content;
+    
+}
+.item{
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius:5px;
+    box-shadow: -5px -5px rgba(24, 38, 43, 0.329);
+    background-color: black;
+    font-family:sans-serif;
+    margin: 0 10px;
+    gap: 20px;
+    justify-items: normal;
+    padding: 20px;
+    justify-content: space-around;
+
+}
+
+.user-review{
+    color: white;
+    background-color:#FFA8A8;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 5px;
+}
+
+#secsec{
+    background-color: #F6FFA4;
+
+    height: 120px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.wrapper2{
+    width: 100%;
+    height:50vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+
+}
+.imaage2{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+img{
+    width: 94.9%;
+    height: 95%;
+    padding-left: 5px;
+    display: block;
+    margin: auto; 
+}
+
+.content2{
+    padding: 10px;
+    color:white;
+    width: 85%;
+    height: 85%;
+    top: 0px;;
+    left:6.2px;
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+}
+.content2:hover{
+    opacity: 1;
+}
+
+
+
+.button {
+    display: inline-block;
+    border-radius: 50px;
+    background-color:green;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 8px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0px;
+  }
+  
+  .button span {
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.main-section{
+    display: flex;
+    flex-direction: column;
+  }
+.main-section #leftbox{
+    
+    
+}
